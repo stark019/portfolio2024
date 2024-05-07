@@ -12,14 +12,6 @@ import ContactForm from './Components/ContactForm';
 import Footer from './Components/Footer';
 import ProjectList from './Components/ProjectComponent';
 import ExperienceEducation from './Components/Timeline';
-
-// <a href="https://ibb.co/KK3mXcC"><img src="https://i.ibb.co/Sf9JPDq/1.png" alt="1" border="0"></a>
-// <a href="https://ibb.co/d6n2Kc3"><img src="https://i.ibb.co/ctzFTvp/2.png" alt="2" border="0"></a>
-// <a href="https://ibb.co/3zRbfwg"><img src="https://i.ibb.co/zJ6g81q/3.png" alt="3" border="0"></a>
-// <a href="https://ibb.co/Qk5bJB2"><img src="https://i.ibb.co/zFknmcy/4.png" alt="4" border="0"></a>
-// <a href="https://ibb.co/wwh7MKP"><img src="https://i.ibb.co/Nm2rZLJ/5.png" alt="5" border="0"></a>
-// <a href="https://ibb.co/r7q13Th"><img src="https://i.ibb.co/2nRfSmr/6.png" alt="6" border="0"></a>
-// <a href="https://ibb.co/D90xffC"><img src="https://i.ibb.co/R3RxTT0/7.png" alt="7" border="0"></a>
 function App() {
   const projects = [
     {
@@ -55,27 +47,27 @@ function App() {
       videoDemoLink: 'https://youtube.com/project2'
     },
     {
-      image: "https://i.ibb.co/Nm2rZLJ/5.png",
-      name: 'Project 2',
-      description: 'Praesent sed diam eget risus varius blandit sit amet non magna.',
-      githubLink: 'https://github.com/example/project2',
-      liveDemoLink: 'https://example.com/project2',
+      image: "https://i.ibb.co/2nRfSmr/6.png",
+      name: 'GIT-INIT',
+      description: 'Happy Hacktober! :octocat: This is a beginner friendly repository made specifically for Hacktoberfest that helps you get your first PR.',
+      githubLink: 'https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019',
+      liveDemoLink: 'https://hacktoberfest.netlify.app/',
       videoDemoLink: 'https://youtube.com/project2'
     },
     {
-      image: "https://i.ibb.co/2nRfSmr/6.png",
-      name: 'Project 2',
-      description: 'Praesent sed diam eget risus varius blandit sit amet non magna.',
-      githubLink: 'https://github.com/example/project2',
-      liveDemoLink: 'https://example.com/project2',
+      image: "https://i.ibb.co/Nm2rZLJ/5.png",
+      name: 'E-Summit Noida 2019',
+      description: 'Successfully drove ticket sales by leveraging my frontend development skills to create a compelling landing page for E Summit Noida 2019. Through seamless user experience and persuasive design elements, I facilitated the sale of 50 event tickets. Demonstrating the tangible impact of effective frontend development in driving engagement and conversions.',
+      githubLink: '#',
+      liveDemoLink: 'https://rajat2502.github.io/E-SUMMIT-2019/index.html',
       videoDemoLink: 'https://youtube.com/project2'
     },
     {
       image: "https://i.ibb.co/R3RxTT0/7.png",
-      name: 'Project 2',
-      description: 'Praesent sed diam eget risus varius blandit sit amet non magna.',
-      githubLink: 'https://github.com/example/project2',
-      liveDemoLink: 'https://example.com/project2',
+      name: 'CloudCloset',
+      description: 'Pioneered the digital presence of Cloud Closet, my innovative startup revolutionizing wardrobe management. Designed and developed a captivating landing page that encapsulated the essence of convenience and style. Seamlessly blending form and function, the page served as a gateway to our platform, enticing users to experience the future of personalized fashion.',
+      githubLink: 'https://github.com/stark019/CloudClosets',
+      liveDemoLink: 'https://cloudcloset.netlify.app/',
       videoDemoLink: 'https://youtube.com/project2'
     },
     

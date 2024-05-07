@@ -56,10 +56,12 @@ const NavLink = ({ title }) => {
 };
 
 const DownloadButton = () => {
+  const resumeUrl = 'https://drive.google.com/uc?export=download&id=13nFvn5MAhE5K_kHufDMV90xKKE6QWnPW';
   return (
+    <a href={resumeUrl}>
     <button className="bg-white text-purple-700 hover:bg-purple-900 hover:text-white rounded-full px-4 py-2 flex items-center">
       Download Resume <FontAwesomeIcon icon={faDownload} className="ml-2" />
-    </button>
+    </button></a>
   );
 };
 

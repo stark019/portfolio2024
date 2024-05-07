@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLaptop, faCalendar, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -12,23 +13,23 @@ const HeroSection = () => {
         <h2 className="text-6xl font-bold md:text-2xl mb-4 text-purple-400">I'm a Frontend Developer</h2>
         <p className="text-lg md:text-2xl mb-4">Let's build together</p>
         <div className="flex space-x-4 mb-8">
-          <ButtonWithIcon title="Learn with me" icon={faLaptop} />
-          <ButtonWithIcon title="Let's talk" icon={faCalendar} />
+          <ButtonWithIcon title="Learn with me" icon={faLaptop} link='https://forms.gle/ZGddttBkVZvfcjf58' />
+          <ButtonWithIcon title="Let's talk" icon={faCalendar} link='https://calendly.com/pandeynihal11/30min' />
         </div>
         <div className="md:hidden mt-8 text-center">
         <DownloadButton />
         </div>
         <div className="flex space-x-4 p-7">
-          <a href="mailto:youremail@example.com" className="text-lg md:text-2xl text-purple-200 hover:text-white">
+          <a href="mailto:pandeynihal11@example.com" className="text-lg md:text-2xl text-purple-200 hover:text-white">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a href="https://github.com/yourgithub" className="text-lg md:text-2xl text-purple-200 hover:text-white">
+          <a href="https://github.com/stark019" className="text-lg md:text-2xl text-purple-200 hover:text-white">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://linkedin.com/yourlinkedin" className="text-lg md:text-2xl text-purple-200 hover:text-white">
+          <a href="https://linkedin.com/in/nihalpandey1901" className="text-lg md:text-2xl text-purple-200 hover:text-white">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://twitter.com/yourtwitter" className="text-lg md:text-2xl text-purple-200 hover:text-white">
+          <a href="https://twitter.com/nihalpandey1901" className="text-lg md:text-2xl text-purple-200 hover:text-white">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </div>
@@ -49,19 +50,23 @@ const HeroSection = () => {
   );
 };
 
-const ButtonWithIcon = ({ title, icon }) => {
+const ButtonWithIcon = ({ title, icon, link }) => {
   return (
+    <a href={link} target='_blank'>
     <button className="bg-white text-purple-700 hover:bg-purple-900 hover:text-white rounded-full px-4 py-2 flex items-center">
       {title} <FontAwesomeIcon icon={icon} className="ml-2" />
-    </button>
+    </button> </a>
   );
 };
 
 const DownloadButton = () => {
+  const resumeUrl = 'https://drive.google.com/uc?export=download&id=13nFvn5MAhE5K_kHufDMV90xKKE6QWnPW';
+
   return (
-    <button className="bg-white text-purple-700 hover:bg-purple-900 hover:text-white rounded-full px-4 py-2 flex items-center">
+    <a href={resumeUrl}>
+    <button  className="bg-white text-purple-700 hover:bg-purple-900 hover:text-white rounded-full px-4 py-2 flex items-center">
       Download Resume <FontAwesomeIcon icon={faDownload} className="ml-2" />
-    </button>
+    </button></a>
   );
 };
 
